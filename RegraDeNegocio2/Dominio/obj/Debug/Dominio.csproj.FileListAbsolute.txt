@@ -1,0 +1,5 @@
+c:\users\jean mota\documents\visual studio 2015\Projects\RegraDeNegocio2\Dominio\bin\Debug\Dominio.dll
+c:\users\jean mota\documents\visual studio 2015\Projects\RegraDeNegocio2\Dominio\bin\Debug\Dominio.pdb
+c:\users\jean mota\documents\visual studio 2015\Projects\RegraDeNegocio2\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+c:\users\jean mota\documents\visual studio 2015\Projects\RegraDeNegocio2\Dominio\obj\Debug\Dominio.dll
+c:\users\jean mota\documents\visual studio 2015\Projects\RegraDeNegocio2\Dominio\obj\Debug\Dominio.pdb

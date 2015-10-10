@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Dominio.Produto>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Novo Cadastro", "Cadastrar")
+</p>
+<p>
+    @using (Html.BeginForm("Index", "Produto", FormMethod.Get))
+    {
+        <input type="text" id="pesquisa" name="pesquisa" placeholder="Buscar por Nome" />
+        <input type="submit" value="Buscar" />
+    }
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProdutoNome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Valor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Disponivel)
+        </th>
+        <th>
+            @*@Html.DisplayName("Cliente")*@
+            @Html.ActionLink("Cliente", "Index", new { ordem = ViewBag.Nome})
+        </th>
+        <th>
+            @*@Html.DisplayName("Data Cadastro")*@
+            @Html.ActionLink("Data", "Index", new { ordem = ViewBag.Data })
+        </th>
+        <th>Ações</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProdutoNome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Valor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Disponivel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cliente.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cliente.DataCadastro)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id=item.ProdutoId }) |
+            @Html.ActionLink("Detalhes", "Detalhes", new { id=item.ProdutoId }) |
+            @Html.ActionLink("Excluir", "Excluir", new { id=item.ProdutoId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Dominio.ViewModel.ClienteEstatistica>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Estatística do Cliente</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Data")
+        </th>
+        <th>
+            @Html.DisplayName("Quantidade")
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Contador)
+            </td>
+        </tr>
+    }
+
+</table>

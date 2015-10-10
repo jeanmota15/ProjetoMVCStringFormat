@@ -1,0 +1,6 @@
+c:\users\jean mota\documents\visual studio 2015\Projects\RegraDeNegocio2\Repositorio\bin\Debug\Repositorio.dll.config
+c:\users\jean mota\documents\visual studio 2015\Projects\RegraDeNegocio2\Repositorio\bin\Debug\Repositorio.dll
+c:\users\jean mota\documents\visual studio 2015\Projects\RegraDeNegocio2\Repositorio\bin\Debug\Repositorio.pdb
+c:\users\jean mota\documents\visual studio 2015\Projects\RegraDeNegocio2\Repositorio\obj\Debug\Repositorio.csprojResolveAssemblyReference.cache
+c:\users\jean mota\documents\visual studio 2015\Projects\RegraDeNegocio2\Repositorio\obj\Debug\Repositorio.dll
+c:\users\jean mota\documents\visual studio 2015\Projects\RegraDeNegocio2\Repositorio\obj\Debug\Repositorio.pdb
